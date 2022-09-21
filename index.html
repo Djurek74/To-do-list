@@ -7,66 +7,57 @@
     <style type="text/css"></style>
     <title>My To-Do</title>
     <style>
-
-      .header{
+      .header {
         display: flex;
         justify-content: center;
       }
 
-      .container-1{
+      .container-1 {
         display: flex;
         flex-direction: column;
       }
 
-      .container-1 div{ 
-        border:1px #ccc solid;
-        padding:10px;
+      .container-1 div {
+        border: 1px #ccc solid;
+        padding: 10px;
       }
 
-      .box-1{
+      .box-1 {
         flex: 2;
       }
 
-      .box-2{
-        flex:1;
+      .box-2 {
+        flex: 1;
       }
-      .btn{
+      .btn {
         display: flex;
         justify-content: end;
         gap: 2px;
       }
-
-    
-
     </style>
   </head>
   <body>
-
     <section>
-      <div class ='header'>
+      <div class="header">
         <h1>My To-Do List</h1>
       </div>
-      <div class ='container-1'>
-
-      <div class ='box-1'>
-        <h3>Input</h3>
-        <div class ='btn'>
-        <Button class = 'b1'>Add</Button>
-      </div>
-      </div>
-
-      <div class='Box 2'>
-        <h3>List</h3>
-        <div class = 'btn'>
-        <button class = 'b2'>Edit</button>
-        <button class = 'b3'>Delete</button>
+      <div class="container-1">
+        <div class="box-1">
+          <h3>Input</h3>
+          <div class ='btn'>
+          <button id="b1">Add</button>
         </div>
       </div>
 
-
+      <div class="box-2">
+        <h3>List</h3>
+        <div class="btn">
+          <button id="b2">Edit</button>
+          <button id="b3">Delete</button>
+        </div>
+      </div>
     </section>
 
     <footer></footer>
-
   </body>
 </html>
