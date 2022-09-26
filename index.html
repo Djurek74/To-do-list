@@ -12,18 +12,53 @@
         justify-content: center;
       }
 
-      .container-1 {
+      body {
+        background-color: antiquewhite;
         display: flex;
+        justify-content: center;
+        align-items: center;
         flex-direction: column;
       }
-
-      .container-1 div {
+      .container-1 {
+        width: 300px;
         border: 1px #ccc solid;
-        padding: 10px;
+        padding: 20px;
+        box-shadow: 0 10px 4px rgb(0, 0, 0);
+        border-radius: 5px;
+        background-color: #fff;
       }
 
       .box-1 {
-        flex: 2;
+        display: grid;
+        grid-template-columns: 4fr 1fr;
+        gap: 20px;
+      }
+
+      .input-el {
+        padding: 10px;
+        border-radius: 5px;
+        border: 1px solid;
+        font-size: 16px;
+      }
+
+      .add-list {
+        border: none;
+        border-radius: 5px;
+        background-color: rgb(14, 166, 9);
+        outline: none;
+        font-size: 15px;
+        color: #fff;
+      }
+
+      .container-2 {
+        border: 1px #ccc solid;
+        padding: 10px;
+        width: 300px;
+        border: 1px #ccc solid;
+        padding: 20px;
+        box-shadow: 0 10px 4px rgb(0, 0, 0);
+        border-radius: 5px;
+        background-color: #fff;
       }
 
       .box-2 {
@@ -41,19 +76,25 @@
       <div class="header">
         <h1>My To-Do List</h1>
       </div>
+
       <div class="container-1">
         <div class="box-1">
-          <h3>Input</h3>
-          <div class ='btn'>
-          <button id="b1">Add</button>
+          <div class="btn">
+            <input type="text" id="input-el" />
+            <button id="add-list">Add</button>
+          </div>
         </div>
       </div>
 
-      <div class="box-2">
-        <h3>List</h3>
-        <div class="btn">
-          <button id="b2">Edit</button>
-          <button id="b3">Delete</button>
+      <div class="container-2">
+        <div class="box-2">
+          <h3>List</h3>
+
+          <div class="btn">
+            <button id="b2">Edit</button>
+            <button id="b3">Delete</button>
+          </div>
+          <ul id="ul-el"></ul>
         </div>
       </div>
     </section>
